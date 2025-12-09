@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 10px;
+            padding: 5px;
+            border: 2px soild black;
+            background-color: chocolate;
+            border-radius: 20px;
+            color: burlywood;
+        }
+        button{
+            background-color: crimson;
+            border-color: darkcyan;
+            cursor:pointer;
+        }
+        button:hover{
+            background-color:greenyellow ;
+        }
+        input:focus,select:focus,textarea:focus{
+            outline: none;
+            border-color: yellow;
+            border: 2px soild magenta;
+
+
+        }
+    </style>
+</head>
+<body>
+    <form action="abc.php">
+        <h1>RegIstration form</h1>
+        <label for="name">Name</label>
+        <input type="text"name="name">
+        <br> <br>
+        <label for="email">Email</label>
+        <input type="email"name="email">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password"name="password">
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address"></textarea>
+        <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio"name="male">Male
+        <input type="radio"name="female">Female
+        <br><br>
+        <label for="course">Course</label>
+        <input type="checkbox"name="IPL">IPL
+        <input type="checkbox"name="Python">Python
+        <input type="checkbox"name="CN">CN
+        <br><br>
+        <label for="city">Select city</label>
+        <select name="city" id="city">
+            <option value="select">select</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Patna">Patna</option>
+            <option value="Mumbai">Mumbai</option>
+        </select><br><br>
+        <label for="file">upload file</label>
+        <input type="file">
+        <button>submit</button>
+        <button>reset</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light On Off</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background-color: black;
+      color: white;
+      padding-top: 50px;
+    }
+
+    #bulb {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: gray;  /* light OFF */
+      margin: 20px auto;
+      transition: 0.3s;
+    }
+
+    .on {
+      background-color: yellow; /* light ON */
+      box-shadow: 0 0 30px yellow;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click to Turn Light On / Off</h2>
+
+  <div id="bulb"></div>
+
+  <button onclick=" toggleLight()">Toggle Light</button>
+
+  <script>
+    function toggleLight() {
+      var bulb = document.getElementById("bulb");
+      bulb.classList.toggle("on");
+    }
+  </script>
+
+</body>
+</html>
+
+
